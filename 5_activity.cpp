@@ -1,23 +1,23 @@
+// Q : WAP where user keep entering the number till they enter the multiple of 10
+
+
 #include<iostream>
-#include<iomanip>
 using namespace std;
 
 int main(){
 
-    float science;
-    float maths;
-    float english;
+    int input_num;
+    do{
+        cout<<"Enter a number : ";
+        cin>>input_num;
+        
 
-    cout<<"Enter your science marks :";
-    cin>>science;
-    cout<<"Enter your maths marks :";
-    cin>>maths;
-    cout<<"Enter your english marks :";
-    cin>>english;
 
-    float average = (science+maths+english)/3;
-
-    cout<<"your average marks is :"<<average<<endl;
+        if (input_num % 10 == 0){
+            cout<<"You came out of the loop"<<endl;
+            break;
+        } 
+    }while(true);
 
     return 0;
 }
